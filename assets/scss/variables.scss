@@ -1,0 +1,18 @@
+
+  :root {
+    --primary-color: #2b77c6;
+    --text-color: #444;
+    --contrast-color: #ccc;
+    --bg-color: #fff;
+  }
+  .dark-mode {
+    --primary-color: #123456;
+    --text-color: #fff;
+    --contrast-color: rgb(100,100,100);
+    --bg-color: #111;
+  }
+
+  $primary-color: var(--primary-color);
+  $text-color: var(--text-color);
+  $contrast-color: var(--contrast-color);
+  $bg-color: var(--bg-color);

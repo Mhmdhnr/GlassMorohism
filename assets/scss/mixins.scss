@@ -1,0 +1,9 @@
+
+  @mixin glass {
+    backdrop-filter: blur(25px) saturate(120%) ;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  @mixin gradient($angle: 90deg, $color: $primary-color, $opacity: 0.3) {
+    background: linear-gradient($angle, $color 0%, rgba($color, $opacity) 100%);
+  }
