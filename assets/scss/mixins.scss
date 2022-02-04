@@ -1,9 +1,17 @@
 
   @mixin glass {
-    backdrop-filter: blur(25px) saturate(120%) ;
+    backdrop-filter: blur(30px) saturate(180%) ;
     background-color: rgba(255, 255, 255, 0.1);
   }
 
-  @mixin gradient($angle: 90deg, $color: $primary-color, $opacity: 0.3) {
-    background: linear-gradient($angle, $color 0%, rgba($color, $opacity) 100%);
+  @mixin gradient($angle: 90deg, $color-start: $primary-color, $color-end: $primary-color) {
+    background: linear-gradient($angle, $color-start 0%, $color-end 100%);
+  }
+
+  @mixin shadow-light {
+    box-shadow: 0 4px 12px 0 rgba(40, 40, 40, 0.1);
+  }
+
+  @mixin boxed {
+    width: 1080px;
   }
