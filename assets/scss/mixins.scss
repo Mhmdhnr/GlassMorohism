@@ -8,8 +8,16 @@
     background: linear-gradient($angle, $color-start 0%, $color-end 100%);
   }
 
+  //@mixin gradient2($angle: 90deg, $color-start: $primary-color, $color-end: $primary-color, $opacity: 0.3) {
+  //  background: linear-gradient($angle, $color-start 0%, rgba($color-end, $opacity) 100%);
+  //}
+
   @mixin shadow-light {
     box-shadow: 0 4px 12px 0 rgba(40, 40, 40, 0.1);
+  }
+
+  @mixin shadow-color($color: $bg-color) {
+    box-shadow: 0 0 20px 3px $color;
   }
 
   @mixin boxed {

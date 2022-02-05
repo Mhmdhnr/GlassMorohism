@@ -48,7 +48,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    @include gradient(90deg, #004056, #760089);
+    @include gradient(90deg, $primary-color, $accent-color);
     background-position: center;
     width: 100vw;
     /*height: 90vh;*/
@@ -60,8 +60,8 @@
       position: absolute;
       border-radius: 10%;
       transition: all step-end;
-      @include gradient(90deg, #11b77e, #17beac);
-      @include shadow-light;
+      @include gradient(90deg, $bg-color, $bg-color);
+      @include shadow-color(rgba(255, 255, 255, 0.2))
     }
   }
 

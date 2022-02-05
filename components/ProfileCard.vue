@@ -109,6 +109,6 @@
     }
   }
   span {
-    color: $bg-color!important;
+    color: $text-color!important;
   }
 </style>

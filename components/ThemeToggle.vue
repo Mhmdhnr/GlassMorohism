@@ -113,13 +113,13 @@
                 moon.style.display = "unset";
                 let moonArc = document.getElementsByClassName("moon-arc")[0];
                 let rect = moonArc.offsetWidth;
-                moonArc.style.boxShadow = `${-rect * 0.2}px ${rect * 0.2}px 0 ${rect * 0.05}px var(--bg-color)`;
+                moonArc.style.boxShadow = `${-rect * 0.3}px ${rect * 0.3}px 0 ${rect * 0.05}px var(--bg-color)`;
                 let _this = this;
                 setTimeout(function () {
                     let i = 1;
                     let revealMoonRayInterval = setInterval(()  => {
                         let star = document.getElementsByClassName("star")[i - 1];
-                        let random = _this.getRandom(15,25);
+                        let random = _this.getRandom(20,25);
                         star.style.width = `${random}%`;
                         star.style.height = `${random}%`;
                         if (i++ === 3) {
@@ -163,22 +163,22 @@
     z-index: 100;
     left: 0;
     top: 0;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     background-color: $text-color;
     clip-path: circle(80% at 0 0);
     .sun-moon {
       position: absolute;
       justify-content: center;
-      left: 10%;
+      left: 5%;
       top: 10%;
-      width: 40%;
-      height: 40%;
+      width: 50%;
+      height: 50%;
       .sun {
         position: relative;
         transition: all 1000ms;
-        width: 70%;
-        height: 70%;
+        width: 60%;
+        height: 60%;
         justify-content: center;
         .sun-circle {
           transition: all 400ms;
